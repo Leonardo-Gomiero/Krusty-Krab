@@ -1,0 +1,207 @@
+body {
+    background-color: rgb(46, 46, 46);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+
+        
+}
+
+nav#menu {
+    background-image: url("imagens/background.jpg");
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 2.5vh;
+    text-align: center;
+	background-color: black;
+    margin: auto;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: black;
+	padding: auto;
+	margin: 2vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+nav#menu a{
+	color: white;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: rgb(0, 181, 226);
+    transition: 0.3s;
+}
+
+ul#album-fotos {
+
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+
+}
+
+ul#album-fotos li {
+
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid rgb(0, 181, 226);
+	background-color: white;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+	transform: all 0.3s ease-in;
+
+}
+
+ul#algum-fotos li:hover {
+
+	transform: scale(1.5);
+
+}
+
+ul#album-fotos li:hover span {
+
+	opacity: 1;
+
+}
+
+
+ul#album-fotos li span {
+
+	opacity: 1;
+	color: white;
+	text-shadow: 1px 1px 1px white;
+	background-color: rgba(0, 0, 0, .3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+
+}
+
+ul#album-fotos li#foto01 {
+
+	background: url("imagens/cozinha.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: white;
+	border-radius: 8px;
+	
+}
+
+ul#album-fotos li#foto01:hover {
+
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	transform: scale(1.5);
+	transition: 0.4s;
+	
+
+}
+
+ul#album-fotos li#foto02 {
+
+	background: url("imagens/hamburguer.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: white;
+	border-radius: 8px;
+	
+}
+
+ul#album-fotos li#foto02:hover {
+
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	transform: scale(1.5);
+	transition: 0.4s;
+
+}
+
+ul#album-fotos li#foto03 {
+
+	background: url("imagens/imagem03") no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: white;
+	border-radius: 8px;
+	
+}
+
+ul#album-fotos li#foto03:hover {
+
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	transform: scale(1.5);
+	transition: 0.4s;
+
+}
+
+ul#album-fotos li#foto04 {
+
+	background: url("imagens/imagem04") no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: white;
+	border-radius: 8px;
+	
+}
+
+ul#album-fotos li#foto04:hover {
+
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	transform: scale(1.5);
+	transition: 0.4s;
+
+}
+
+ul#album-fotos li#foto05 {
+
+	background: url("imagens/imagem05") no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: white;
+	border-radius: 8px;
+	
+}
+
+ul#album-fotos li#foto05:hover {
+
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	transform: scale(1.5);
+	transition: 0.4s;
+
+}
+
+ul#album-fotos li#foto06 {
+
+	background: url("imagens/imagem06") no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: white;
+	border-radius: 8px;
+	
+}
+
+ul#album-fotos li#foto06:hover {
+
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	transform: scale(1.5);
+	transition: 0.4s;
+
+}

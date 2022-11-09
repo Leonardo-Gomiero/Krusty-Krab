@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(46, 46, 46);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+
+nav#menu {
+    background-image: url("imagens/background.jpg");
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 2.5vh;
+    text-align: center;
+	background-color: black;
+    margin: auto;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: black;
+	padding: auto;
+	margin: 2vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+nav#menu a{
+	color: white;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: rgb(0, 181, 226);
+    transition: 0.3s;
+}
+
+
+.item {
+    
+    border-top: 0px;
+    margin: none;
+    
+    padding: none;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vh;
+    height: 40vh;
+
+}
+
+.txt1 {
+    
+    width: 40vw;
+    height: 15vh;
+    float: right;
+    margin: none none none none;
+    padding: 5% 10%  
+
+}
+
+
+.txt2 {
+    
+    width: 40vw;
+    height: 15vh;
+    float: left;
+    margin: none none none none;
+    padding: 5% 10%  
+
+}
+
+.img{
+    height: 40vh;
+    width: 35vw;
+    float: left;
+    background-color: black;
+}
+
+.img2{
+
+    height: 40vh;
+    width: 35vw;
+    float: right;
+    background-color: black;
+}
+
+
+#rodape{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    padding-right: 10vh;
+}
+
+.logo-rodape {
+    width: 30vh;
+}
+
+.rede-rodape{
+
+    width:10vh;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10vh;
+}
+
+

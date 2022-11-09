@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(46, 46, 46);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+
+        
+}
+
+nav#menu {
+    background-image: url("imagens/background.jpg");
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 2.5vh;
+    text-align: center;
+	background-color: black;
+    margin: auto;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: black;
+	padding: auto;
+	margin: 2vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+nav#menu a{
+	color: white;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: rgb(0, 181, 226);
+    transition: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#form{
+    color: white;
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.form , .form input, .form textarea, .form .enviar {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+
+}
+
+.form label {
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-left: 25%;
+    
+
+}
+
+.form input, .form textarea {
+
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+#rodape{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    padding-right: 10vh;
+}
+
+.logo-rodape {
+    width: 30vh;
+}
+
+.rede-rodape{
+
+    width:10vh;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10vh;
+}
+
+.fundocont{
+    height: 1000px;
+    margin-top: -20px;
+    color: white;
+}
+
+form{
+    margin-top: 20px;
+    margin-left: 28%;
+    margin-bottom: 20px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+fieldset{
+    width: 55%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+
+.chk{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    transform: scale(1,1.5);
+}
+
+.fundocont h4{
+    text-align: center;
+    font-family: "Sunday Best";
+    padding: 15px;
+}
+
+legend, label{
+    color:white ;
+}
+
+.texto h4{
+    color:white;
+}
+
