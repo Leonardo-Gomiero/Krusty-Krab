@@ -8,8 +8,8 @@ import com.mongodb.client.model.Filters;
 import org.bson.Document;
 
 public class ConectarMongo {
-    String database = "teste1";
-    String collection = "dados";
+    static String database = "PokeDuel";
+    static String collection = "Pokemons";
     
     public void getValues(){
         System.out.println("get Values");
@@ -23,17 +23,18 @@ public class ConectarMongo {
         }        
     }
     
-    public String selectValues(int x){
-        String y = "";
-        System.out.println("Select Values");
+    public static String selecionarNome(int pokedex){
+        String name = "";
+        System.out.println("Select Name");
         String uri = "mongodb://localhost";
         MongoClient mongo = MongoClients.create(uri);
-        MongoDatabase db = mongo.getDatabase(database);
+        MongoDatabase db = mongo.getDatabase("pokeduel");
         MongoCollection<Document> docs =
-                db.getCollection(collection);
-        Document doc = docs.find(Filters.eq("_id",x)).first();
-        y = doc.getString("nome");
-        return y;
+                db.getCollection("pokemons");
+        Document doc = docs.find(Filters.eq("_id", pokedex)).first();
+        name = doc.getString("Name");
+        System.out.println(name);
+        return name;
     }
     public void insertValues(String Nome, String email,
             int code, String profissao, boolean trab){

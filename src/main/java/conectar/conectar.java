@@ -36,6 +36,25 @@ public class conectar {
         }
 
     }
+    
+    public String PegarSenha(Connection con, String email) {
+        String senhaVerdadeira = "";
+    	try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("select senha from dados where email =" + "\"" + email + "\"");
+            System.out.println("select senha from dados where email = " + email);
+            while (rs.next()) {
+            	senhaVerdadeira = rs.getString(1);
+                System.out.println("Pegando senha de " + email + ":" + " " + senhaVerdadeira);
+            }
+            con.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        
+        return senhaVerdadeira;
+
+    }
 
     public String dataBaseSelect(int code) {
         Connection connection = connectionMySql();

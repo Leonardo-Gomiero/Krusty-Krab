@@ -18,7 +18,6 @@ public class WebController {
     @RequestMapping("/form")
     public String Form(Model modelo) {
         System.out.println("Formulário");
-
         
         System.setProperty("java.awt.headless", "false");
         modelo.addAttribute("mensagem", "Formulário de Inscrição");
@@ -62,6 +61,31 @@ public class WebController {
         obj.closeConnectionMySql(conexao);
         return "respostaBanco";
     }
+    
+    @RequestMapping(value = "/fazerLogin", method = RequestMethod.GET)
+    public String Login(Model modelo, String uname, String psw) {
+        System.out.println("Realizando Login");
+        
+        conectar obj = new conectar();
+        Connection conexao = obj.connectionMySql();
+        
+        String senha = obj.PegarSenha(conexao, uname);
+        obj.closeConnectionMySql(conexao);
+        
+        System.out.println("Usuario: " + uname);
+        System.out.println("Senha: " + psw);
+        System.out.println("Senha verdadeira: " + senha);
+        if (senha.equals(psw)) {
+        	modelo.addAttribute("mensagem1", ConectarMongo.selecionarNome(487));
+     
+        	return "form";
+        }
+        else {
+        	modelo.addAttribute("mensagem", "Email ou senha incorretos. Tente novamente.");
+        	return "login";
+        }
+        
+    }
 
     @RequestMapping("/bancoM")
     public String BancoMDB(Model modelo) {
@@ -69,13 +93,5 @@ public class WebController {
         return "bancoM";
     }
 
-    @RequestMapping(value = "bancoMongo", method = RequestMethod.POST)
-    public String BancoMongo(Model modelo, String code) {
-        System.out.println("Consulta o id no Mongo");
-        ConectarMongo con = new ConectarMongo();
-        con.getValues();
-        String x = con.selectValues(Integer.parseInt(code));
-        modelo.addAttribute("mensagem3", "Olá, " + x + ", como você está?");
-        return "bancoMongo";
-    }
+    
 }
