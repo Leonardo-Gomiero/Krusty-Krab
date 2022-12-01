@@ -1,89 +1,173 @@
-<DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8"/>
-        <title>Aula de Dev WEB</title>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
 
-    <body>
-        <header>
-            <nav id="menu">
-                <ul type="disc">                
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="fotos.html">Fotos</a></li>
-                    <li><a href="contatoNovo.html">Contato</a></li>
-                    <li><a href="login.html">Login</a></li>                  
-                </ul>
-            </nav>            
-        </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> SIRI CASCUDO </title>
+
+    <link rel="stylesheet" href="estilo.css"><!--Link Página de Estilo-->
+
+    <link rel="icon" href="img/logosite.png"><!--Favicon Página-->
+
+    <!-- CSS only -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--FontAwsome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="https://kit.fontawesome.com/8923ff4866.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+ 
+    <header id="cabecalho"><!--Início Cabeçalho-->
+
+        <nav id="nav-cabecalho" class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+              <a href="index.html" class="navbar-brand">
+                <img src="img/logosite.png" width="55" height="71">
+              </a>
+     
+     
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+     
+              <div class="collapse navbar-collapse" id="nav-principal">
+               <ul class="navbar-nav ml-auto">
+                 <li>
+                   <a href="index.html">Home</a>
+                 </li>
+                 <li>
+                   <a href="sobre.html">Sobre</a>
+                 </li>
+                  <li>
+                    <a href="login.html"><button class="btn btn-outline-light bnt-sm">Entrar</button></a>
+                  </li>
+               </ul>
+                
+              </div>
+     
+            </div> 
+           </nav>
         
-        <div id="intro">
-            <img id ="logo" src="imagens/logoNovo_SemFundo2.png" alt="">
+    </header><!--Fim Cabeçalho-->
+
+    <section id="inicio"><!--Sessão de Início-->
+
+
+        <div id="caixa-inicio">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+        
+                    <div id="controle" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active">
+                            <img src="img/img/Logo.png" class="img-fluid">
+                          </div>
+
+                          <div class="carousel-item">
+                          <img src="img/img/rest1.png" class="img-fluid">
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="img/img/rest2.png" class="img-fluid">
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="img/img/rest3.png" class="img-fluid">
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="img/img/final.png" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#controle" role="button" data-slide="prev">
+                          <i class="fas fa-angle-left fa-3x"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#controle" role="button" data-slide="next">
+                          <i class="fas fa-angle-right fa-3x"></i>
+                        </a>
+                      </div>
+
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+    </section><!--Seção de Inicio - Fim-->
+        
+    <section id="historia"><!--Seção História-->
+
+        <div id="caixa-historia">
+            <h2>
+                Nossa História
+            </h2>
+
+            <p>
+                Somos um restaurante temático baseado em um desenho animado chamado "Bob Esponja", da década 
+                de noventa, buscamos realizar o sonho dos telespectadores para que desfrutem do ambiente e do INCRIVEL sabor de nossos lanches.
+                <br>
+                Nós aceitamos todo o tipo de ser vivo, humanos, crustáceos, peixes, gatos, 
+                cachorros e até mesmo sua planta!
+                <br>
+                falando de plantas temos a solução caso você seja vegetariano ou vegano, 
+                o siri cascudo oferece opções que se adaptam ao seu paladar.
+                <br>
+
+            <a href="sobre.html"><button class="btn btn-sm btn-light">Saiba Mais</button></a>
         </div>
 
-        <main>
-            <section class="quem-somos">
-                
-                <img src="imagens/restaurant.jpg" alt="cuidado" id="quem-somos-img">
-                
-                <p id="quem-somos-txt">Aproveite de um ambiente totalmente inspirado no querido desenho <b id="bob-esponja"><i>Bob Esponja</i></b>.<br><br><br>Tudo foi feito pensando em você! Desde nosso ambiente até a nossos<br>produtos!</p>
+    </section><!--Seção História - Fim-->
 
-            </section>
+    <section id="mapa"><!--Seção Mapa-->
 
-            <section class="quem-somos">
-                
-                <p id="quem-somos-txt2">Um ambiente totalmente personalizado para que você tenha uma experiência única no <i>melhor restaurante dos sete mares!</i></p>
-                
-                <img src="imagens/rustykrab_e.jpg" alt="cuidado" id="quem-somos-img2">
-                
-            </section>
+        <div id="caixa-mapa">
+            <h1> Nossa Localização </h1>
+            <p> Como todo bom tesouro, nas profundezas de um belo oceano! </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9506364.62833493!2d-36.58790901177644!3d-54.429578956526434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb93db6e252a87925%3A0x7ee37cda884db0bd!2sIlhas%20Ge%C3%B3rgia%20do%20Sul%20e%20Sandwich%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1669337008350!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section><!--Seção Mapa-->
 
-            <div id="mapa">
-                
-                <h1>Onde nos encontrar</h1>
-                <iframe id ="mapa-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31846.778005755263!2d-32.444472149253905!3d-3.842948751898155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x63652666d497a3d%3A0x83f652bfda978b15!2sFernando%20de%20Noronha%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1663287087765!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h2></h2>
+    <section id="video"><!--Seção Vídeo-->
 
+        <div id="caixa-video">
+
+            <h1> Aproveite nossa sala de cinama enquanto saboreie nossos deliciosos lanches!  </h1>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/LcC-jBJRzXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+    </section><!--Seção Vídeo - Fim-->
+
+  
+
+    <footer id="rodape">
+
+        <div id="caixa-rodape">
+            <div class="container">
+              <h6 id="">
+                &copy;Copyright - Direitos Reservados por Siri Cascudo™ - 2022
+              </h6>
+              <img src="img/logosite.png" width="55" height="71">
+                
             </div>
 
-            <section class="beneficios">
-                
-                <img src="imagens/inclusao.png" id="inclusao-img" title="hotwheels">
-                
-                <ul id="listaBeneficios">                
-                    <li>Ambiente familiar</li>
-                    <li>Atendimento de alta qualidade</li>
-                    <li>Higiênico e organizado</li>
-                    <li>Contamos com cardápio em braile, ambiente sensorialmente isolado<br>e diversas rampas e barras de apoio</li>
-                    <li><i>LGBTQIA+ friendly</li>
-                                    
-                </ul>
-
-            </section>
-
-
-            <div id="video">
-                
-                <h1>Só aqui você encontra o único<br>e inconfundível <b id="lanchao"><i>Hambúrguer de Siri</i></b></h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/E-xhxS581Uc?controls=0" title="Hamburguer de Siri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-
             </div>
+            
 
-        </main>
-
-        <footer>
-            <div id="rodape">
-                <a href="https://www.facebook.com/krusty.krab.10236115"><img src="imagens/facebook.png" title="gostoso" class="rede-rodape"></a>
-                <a href="https://www.instagram.com/krustykrab.uz/"><img src="imagens/instagram.png" title="gostoso" class="rede-rodape"></a>
-                <a href="https://wa.me/5511983367853"><img src="imagens/whatsapp.png" title="gostoso" class="rede-rodape"></a>
-            </div>
+    </footer>
 
 
-        </footer>
-
-
-    </body>
+</body>
 </html>

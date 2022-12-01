@@ -23,19 +23,49 @@ public class ConectarMongo {
         }        
     }
     
-    public static String selecionarNome(int pokedex){
+    public static String selecionarNome(int identificador){
         String name = "";
-        System.out.println("Select Name");
+        System.out.println("Selecionar nome");
         String uri = "mongodb://localhost";
         MongoClient mongo = MongoClients.create(uri);
-        MongoDatabase db = mongo.getDatabase("pokeduel");
+        MongoDatabase db = mongo.getDatabase("siri-cascudo");
         MongoCollection<Document> docs =
-                db.getCollection("pokemons");
-        Document doc = docs.find(Filters.eq("_id", pokedex)).first();
-        name = doc.getString("Name");
+                db.getCollection("cardapio");
+        Document doc = docs.find(Filters.eq("_id", identificador)).first();
+        name = doc.getString("Nome");
         System.out.println(name);
         return name;
     }
+    
+    public static String selecionarDescricao(int identificador){
+        String descricao = "";
+        System.out.println("Selecionar Descrição");
+        String uri = "mongodb://localhost";
+        MongoClient mongo = MongoClients.create(uri);
+        MongoDatabase db = mongo.getDatabase("siri-cascudo");
+        MongoCollection<Document> docs =
+                db.getCollection("cardapio");
+        Document doc = docs.find(Filters.eq("_id", identificador)).first();
+        descricao = doc.getString("Descricao");
+        System.out.println(descricao);
+        return descricao;
+    }
+    
+    public static double selecionarPreco(int identificador){
+        double preco = 0;
+        System.out.println("Selecionar Descrição");
+        String uri = "mongodb://localhost";
+        MongoClient mongo = MongoClients.create(uri);
+        MongoDatabase db = mongo.getDatabase("siri-cascudo");
+        MongoCollection<Document> docs =
+                db.getCollection("cardapio");
+        Document doc = docs.find(Filters.eq("_id", identificador)).first();
+        preco = doc.getDouble("Preco");
+        System.out.println(preco);
+        return preco;
+    }
+    
+    
     public void insertValues(String Nome, String email,
             int code, String profissao, boolean trab){
         System.out.println("insert Values");

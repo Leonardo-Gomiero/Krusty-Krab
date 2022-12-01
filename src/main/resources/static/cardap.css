@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), #7FFFF0);
+}
+.cardapio{
+    width: 90%;
+    margin: 20px 0 50px 0;
+}
+.cardapio li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 0;
+
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px solid #7FFFF0;
+    border-radius: 10px;
+}
+.cardapio li:hover{
+    border-color: #FC00FF;
+}
+.cardapio li:active{
+    border-color: #088C19;
+}
+
+.cardapio li:hover h2 {
+    font-size: 34px;
+}
+.cardapio h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.cardapio_texto{
+    text-align: center;
+    padding: 2% 0 2% 0;
+}
+.img_cardapio{
+    width:95%;
+}
+.item_descricao{
+    font-size: 18px;
+}
+.item_preco{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}

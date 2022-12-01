@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> SIRI CASCUDO </title>
+
+    <link rel="stylesheet" href="estilo.css"><!--Link Página de Estilo-->
+    <script src="script.js"></script>
+
+    <link rel="icon" href="img/logosite.png"><!--Favicon Página-->
+
+    <!-- CSS only -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--FontAwsome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="https://kit.fontawesome.com/8923ff4866.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+ 
+  <header id="cabecalho" class="bg-dark"><!--Início Cabeçalho-->
+
+    <nav id="nav-cabecalho" class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="img/logosite.png" width="55" height="71">
+          </a>
+ 
+ 
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+ 
+          <div class="collapse navbar-collapse" id="nav-principal">
+           <ul class="navbar-nav ml-auto">
+
+						<p class="text-white" th:text="${mensagem}"></p>
+
+						<li>
+							<form class="formBotao" action="home" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Home</button>
+							</form>
+						</li>
+
+						<li>
+							<form action="cardapio" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Cardápio</button>
+							</form>
+						</li>
+						<li>
+							<form action="pedido" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Reservar</button>
+							</form>
+						</li>
+						<li>
+							<form action="sobre" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Sobre</button>
+							</form>
+						</li>
+						<li>
+							<form action="contato" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Contato</button>
+							</form>
+						</li>
+						<li>
+							<a href="index.html"><button class="btn btn-outline-light bnt-sm">Sair</button></a>
+						</li>
+					</ul>
+            
+          </div>
+ 
+        </div> 
+       </nav>
+    
+  </header><!--Fim Cabeçalho-->
+    
+
+    <section id="pedido">
+        <div id="caixa-pedido">
+
+              <div class="container">
+                <div class="row">
+                  <div class="col mb-5">
+                    <h1 class="display-4">Registre sua Reserva</h1>
+                  </div>
+                </div>
+          
+                <div class="row mb-3">
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Digite seu nome" id="nome" />
+                  </div>
+
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Digite seu número" id="numero" />
+                  </div>
+          
+                  <div class="col-md-3">
+                    <select class="form-control" id="ambi">
+                      <option value="">Escolha o ambiente</option>
+                      <option value="1"> Ambiente Interno </option>
+                      <option value="2"> Ambiente Externo </option>
+                    </select>
+                  </div>
+          
+                  <div class="col-md-3">
+                    <select class="form-control" id="qpessoas">
+                      <option value="">Quantidade de Pessoas</option>
+                      <option value="1">Mesa para 1 pessoa</option>
+                      <option value="2">Mesa para 2 pessoas</option>
+                      <option value="3">Mesa para 3 pessoas</option>
+                      <option value="4">Mesa para 4 pessoas</option>
+                      <option value="5">Mesas para 5 pessoas</option>
+                      <option value="6">Mesas para 6 pessoas</option>
+                      <option value="7">Mesas para 7 pessoas</option>
+                      <option value="8">Mesas para 8 pessoas</option>
+                      <option value="9">Mesas para 9 pessoas</option>
+                      <option value="10">Mesas para 10 pessoas</option>
+                      <option value="11">Mesas para 11 pessoas</option>
+                      <option value="12">Mesas para 12 pessoas</option>
+                      <option value="13">Mesas para 13 pessoas</option>
+                      <option value="14">Mesas para 14 pessoas</option>
+                      <option value="15">Mesas para 15 pessoas</option>
+                      <option value="16">Reservar o ambiente</option>
+                    </select>
+                    
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Deseja decoração para aniversário?" id="deco" />
+                  </div>
+
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Insira a data (dd/mm/aa)" id="descricao" />
+                  </div>
+          
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Hora (hh/mm)" id="valor" />
+                  </div>
+          
+                  <div class="col-md-2 d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary" onclick="cadastrarDespesa()">
+                      <i class="fas fa-plus text-white"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 mt-3">
+                <p>Em caso de desistência sem aviso prévio, será cobrado uma taxa de 30% referente ao valor total.</p>
+              </div>
+
+              <div class="col-md-12 mt-3">
+                <button class="btn btn-secondary btn-custom"><a href="meus-pedidos.html">Ver Reservas</a></button>
+              </div>
+          
+              <!-- Modal -->
+              <div class="modal fade cor-texto" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div id="modal_titulo_div">
+                      <h5 class="modal-title" id="modal_titulo"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="modal_conteudo"></div>
+                    <div class="modal-footer">
+                      <button type="button" data-dismiss="modal" id="modal_btn">Voltar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <footer footer style="position:absolute; bottom:0; width:100%;" id="rodape">
+
+      <div id="caixa-rodape">
+          <div class="container">
+            <h6 id="">
+              &copy;Copyright - Direitos Reservados por Siri Cascudo™ - 2022
+            </h6>
+            <img src="img/logosite.png" width="55" height="71">
+              
+          </div>
+  
+          </div>
+          
+  
+  </footer>
+
+
+</body>
+</html>

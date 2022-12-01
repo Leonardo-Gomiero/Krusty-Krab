@@ -1,36 +1,106 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title> SIRI CASCUDO </title>
 
-<head>
-	<title>Spring com banco e form</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="login.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<body>
-	<form action="fazerLogin" method="get">
-		<div class="imgcontainer">
-			<img src="imagens/itsame.png" alt="Avatar" class="avatar">
-		</div>
+    <link rel="stylesheet" href="estilo.css"><!--Link Página de Estilo-->
 
-		<div class="container">
-			<label for="uname"><b>Username</b></label>
-			<input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+    <link rel="icon" href="img/logosite.png"><!--Favicon Página-->
 
-			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+    <!--FontAwsome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="https://kit.fontawesome.com/8923ff4866.js" crossorigin="anonymous"></script>
 
-			<button type="submit" value="loginCadastro">Login</button>
-			<label>
-				<input type="checkbox" checked="checked" name="remember"> Remember me
-			</label>
-		</div>
+    <style>
+      .card-login {
+        padding: 30px 0 0 0;
+        width: 350px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
 
-		<div class="container" style="background-color:#f1f1f1">
-			<button type="button" class="cancelbtn">Cancel</button>
-			<span class="psw">Forgot <a href="#">password?</a></span>
-		</div>
-	</form>>
-</body>
+  <body>
 
+    <header id="cabecalho"><!--Início Cabeçalho-->
+
+      <nav id="nav-cabecalho" class="navbar navbar-expand-sm navbar-light">
+          <div class="container">
+            <a href="index.html" class="navbar-brand">
+              <img src="img/logosite.png" width="55" height="71">
+            </a>
+   
+   
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+   
+            <div class="collapse navbar-collapse" id="nav-principal">
+             <ul class="navbar-nav ml-auto">
+                 <li>
+                   <a href="index.html">Home</a>
+                 </li>
+                 <li>
+                   <a href="sobre.html">Sobre</a>
+                 </li>
+                  <li>
+                    <a href="login.html"><button class="btn btn-outline-light bnt-sm">Entrar</button></a>
+                  </li>
+               </ul>
+              
+            </div>
+   
+          </div> 
+         </nav>
+      
+  </header><!--Fim Cabeçalho-->
+
+    <div class="container">    
+      <div class="row">
+
+        <div class="card-login">
+          <div class="card">
+            <div class="card-header">
+              Login
+            </div>
+            <div class="card-body">
+            
+              <form action="fazerLogin" method="get">
+                <div class="form-group">
+                  <input id="uname" name="uname" type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                  <input  id="psw" name="psw" type="password" class="form-control" placeholder="Senha" required>
+                </div>
+                <button class="btn btn-lg btn-secondary btn-block text-white" type="submit">Entrar</button>
+                <a href="cadastro.html" class="btn btn-lg btn-secondary btn-block">Não tenho login ainda</a>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <footer footer style="position:absolute; bottom:0; width:100%;" id="rodape">
+
+    <div id="caixa-rodape">
+        <div class="container">
+          <h6 id="">
+            &copy;Copyright - Direitos Reservados por Siri Cascudo™ - 2022
+          </h6>
+          <img src="img/logosite.png" width="55" height="71">
+            
+        </div>
+
+        </div>
+        
+
+  </footer>
+
+  </body>
 </html>

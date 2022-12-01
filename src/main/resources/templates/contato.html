@@ -22,7 +22,7 @@
 
 <body>
  
-    <header id="cabecalho"><!--Início Cabeçalho-->
+    <header id="cabecalho" class="bg-dark"><!--Início Cabeçalho-->
 
         <nav id="nav-cabecalho" class="navbar navbar-expand-sm navbar-light">
             <div class="container">
@@ -37,25 +37,39 @@
      
               <div class="collapse navbar-collapse" id="nav-principal">
                <ul class="navbar-nav ml-auto">
-                 <li>
-                   <a href="index.html">Home</a>
-                 </li>
-                 <li>
-                   <a href="cardapio.html">Cardápio</a>
-                 </li>
-                 <li>
-                  <a href="pedido.html">Reservar</a>
-                 </li>
-                 <li>
-                   <a href="sobre.html">Sobre</a>
-                 </li>
-                 <li>
-                    <a href="contato.html">Contato</a>
-                  </li>
-                  <li>
-                    <a href="login.html"><button class="btn btn-outline-light bnt-sm">Entrar</button></a>
-                  </li>
-               </ul>
+
+						<p class="text-white" th:text="${mensagem}"></p>
+
+						<li>
+							<form class="formBotao" action="home" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Home</button>
+							</form>
+						</li>
+
+						<li>
+							<form action="cardapio" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Cardápio</button>
+							</form>
+						</li>
+						<li>
+							<form action="pedido" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Reservar</button>
+							</form>
+						</li>
+						<li>
+							<form action="sobre" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Sobre</button>
+							</form>
+						</li>
+						<li>
+							<form action="contato" method="get">
+								<button class="bg-dark btn text-white btn-sm" type="submit">Contato</button>
+							</form>
+						</li>
+						<li>
+							<a href="index.html"><button class="btn btn-outline-light bnt-sm">Sair</button></a>
+						</li>
+					</ul>
                 
               </div>
      

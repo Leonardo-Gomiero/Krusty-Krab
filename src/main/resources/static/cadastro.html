@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title> SIRI CASCUDO </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="estilo.css">
+	<!--Link Página de Estilo-->
+
+	<link rel="icon" href="img/logosite.png">
+	<!--Favicon Página-->
+
+	<!--FontAwsome-->
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<script src="https://kit.fontawesome.com/8923ff4866.js" crossorigin="anonymous"></script>
+
+	<style>
+		.card-login {
+			padding: 30px 0 0 0;
+			width: 350px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header id="cabecalho">
+		<!--Início Cabeçalho-->
+
+		<nav id="nav-cabecalho" class="navbar navbar-expand-sm navbar-light">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<img src="img/logosite.png" width="55" height="71">
+				</a>
+
+
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="nav-principal">
+					<ul class="navbar-nav ml-auto">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						<li>
+							<a href="login.html"><button class="btn btn-outline-light bnt-sm">Entrar</button></a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</nav>
+
+	</header>
+	<!--Fim Cabeçalho-->
+
+	<div class="container">
+		<div class="row">
+
+			<div class="card-login">
+				<div class="card">
+					<div class="card-header">
+						Cadastre-se
+					</div>
+					<div class="card-body">
+						<form action="cadastrarCliente" method="post">
+							<div class="form-group">
+								<input name="nome" type="text" class="form-control" placeholder="Digite seu Nome">
+							</div>
+							<div class="form-group">
+								<input name="email" type="email" class="form-control" placeholder="Digite seu E-mail">
+							</div>
+							<div class="form-group">
+								<input name="senha1" type="password" class="form-control" placeholder="Digite sua Senha">
+							</div>
+							<div class="form-group">
+								<input name="senha2" type="password" class="form-control"
+									placeholder="Confirme sua Senha">
+							</div>
+							<p th:text="${mensagem}" id="aviso"></p>
+							<button class="btn btn-lg btn-secondary btn-block text-white" type="submit">Cadastrar</button>
+							<a href="login.html" class="btn btn-lg btn-secondary btn-block">Fazer Login</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer footer style="position:absolute; bottom:0; width:100%;" id="rodape">
+
+		<div id="caixa-rodape">
+			<div class="container">
+				<h6 id="">
+					&copy;Copyright - Direitos Reservados por Siri Cascudo™ - 2022
+				</h6>
+				<img src="img/logosite.png" width="55" height="71">
+
+			</div>
+
+		</div>
+
+
+	</footer>
+
+</body>
+
+</html>
